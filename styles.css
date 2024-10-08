@@ -1,0 +1,290 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+header {
+  background: #0b0c3d;
+  color: #ffffff;
+  padding: 1px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 20px;
+  /* background: #333; */
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+}
+.logo h1 {
+  font-size: 28px; /* Logo text size */
+  color: #ffffff;
+  margin: 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+/* Banner Styles */
+.banner {
+  background-image: url('tripss.jpg');
+  /*Replacewithactualimagepath*/background-size: cover;
+  background-position: center;
+  height: 450px;
+  display: flex;
+  border-radius: 2%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: #0b0c3d;
+  border-bottom: #09092e;
+  -webkit-border-radius: 2%;
+  -moz-border-radius: 2%;
+  -ms-border-radius: 2%;
+  -o-border-radius: 2%;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(248, 248, 248, 0.5); */
+}
+
+.banner-content {
+  text-align: center;
+  color: #271947;
+  position: relative;
+  z-index: 1;
+}
+
+.banner-content h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+/* ... other styles ... */
+
+.search-container {
+  position: relative;
+  display: inline-block;
+}
+
+.search-icon {
+  font-size: 24px;
+  color: rgb(175, 51, 51);
+  position: absolute;
+  top: 50%; /* Center the icon vertically */
+  left: 10px; /* Adjust the left position as needed */
+  transform: translateY(-50%); /* Move it up by half its height */
+}
+
+.input-container {
+  position: relative;
+}
+
+.search-bar {
+  padding: 10px 10px 10px 40px; /* Add padding to the left for the icon */
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid black;
+  color: rgb(32, 33, 49);
+  font-size: 16px;
+}
+
+/* General styling for the authentication forms */
+.auth-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px auto;
+  width: 80%;
+}
+
+.auth-container div {
+  width: 45%;
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label, input {
+  width: 80%;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* ... other styles ... */
+
+/* .search-bar {
+  
+  padding: 12px;
+  width: 320px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  margin-top: 10px;
+} */
+
+
+/* Destinations, Travel, Stay, and Eat Sections */
+.destinations, .travel-options, .stay-options, .eat-options {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.destinations h2, .travel-options h2, .stay-options h2, .eat-options h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.destination-cards, .option-cards, .stay-cards, .eat-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.card, .option-card, .stay-card, .eat-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img, .option-card img, .stay-card img, .eat-card img {
+  width: 100%;
+  height: 220px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card:hover, .option-card:hover, .stay-card:hover, .eat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card h3, .option-card h3, .stay-card h3, .eat-card h3 {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.card p, .option-card p, .stay-card p, .eat-card p {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #666;
+}
+
+/* Footer Styles */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 14px;
+}
+/* Mountain Details Section Styles */
+#mountain-details {
+  margin: 20px 0;
+}
+
+#mountain-details .mountain-card {
+  width: 30%;
+  background: #f5f5f5;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#mountain-details img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+#mountain-details h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+#mountain-details p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.mountain-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+#mountain-details {
+  margin-top: 20px;
+}
+
+h2, h3 {
+  color: #333;
+}
